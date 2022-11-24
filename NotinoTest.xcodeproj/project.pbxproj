@@ -15,6 +15,8 @@
 		5308257D292FDE4A0088877A /* WishlistAndCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308257C292FDE4A0088877A /* WishlistAndCartManager.swift */; };
 		5308257F292FF5BA0088877A /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308257E292FF5BA0088877A /* JSONManager.swift */; };
 		53082581292FF60B0088877A /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082580292FF60B0088877A /* PhotoManager.swift */; };
+		53082583292FFD7D0088877A /* JSONModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082582292FFD7D0088877A /* JSONModels.swift */; };
+		53082586293027560088877A /* NotinoTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53082584293027560088877A /* NotinoTest.xcdatamodeld */; };
 		5342A2D5292CE7AD00E8EA10 /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */; };
 		536371962927D62500EFDBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371952927D62500EFDBA0 /* AppDelegate.swift */; };
 		536371982927D62500EFDBA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371972927D62500EFDBA0 /* SceneDelegate.swift */; };
@@ -35,6 +37,8 @@
 		5308257C292FDE4A0088877A /* WishlistAndCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistAndCartManager.swift; sourceTree = "<group>"; };
 		5308257E292FF5BA0088877A /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		53082580292FF60B0088877A /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		53082582292FFD7D0088877A /* JSONModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModels.swift; sourceTree = "<group>"; };
+		53082585293027560088877A /* NotinoTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotinoTest.xcdatamodel; sourceTree = "<group>"; };
 		5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
 		536371922927D62500EFDBA0 /* NotinoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotinoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536371952927D62500EFDBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				536371AE2927D69500EFDBA0 /* Controller */,
 				536371AD2927D68E00EFDBA0 /* View */,
 				536371AC2927D68700EFDBA0 /* Model */,
+				53082584293027560088877A /* NotinoTest.xcdatamodeld */,
 			);
 			path = NotinoTest;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				5308257C292FDE4A0088877A /* WishlistAndCartManager.swift */,
 				5308257E292FF5BA0088877A /* JSONManager.swift */,
 				53082580292FF60B0088877A /* PhotoManager.swift */,
+				53082582292FFD7D0088877A /* JSONModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,11 +299,13 @@
 			files = (
 				5363719A2927D62500EFDBA0 /* ViewController.swift in Sources */,
 				536371962927D62500EFDBA0 /* AppDelegate.swift in Sources */,
+				53082586293027560088877A /* NotinoTest.xcdatamodeld in Sources */,
 				5342A2D5292CE7AD00E8EA10 /* CustomCVCell.swift in Sources */,
 				536371982927D62500EFDBA0 /* SceneDelegate.swift in Sources */,
 				53082575292FD5570088877A /* Constants.swift in Sources */,
 				53082577292FD5AF0088877A /* SetProductProtocol.swift in Sources */,
 				5308257D292FDE4A0088877A /* WishlistAndCartManager.swift in Sources */,
+				53082583292FFD7D0088877A /* JSONModels.swift in Sources */,
 				5308257F292FF5BA0088877A /* JSONManager.swift in Sources */,
 				53082581292FF60B0088877A /* PhotoManager.swift in Sources */,
 				53082579292FD6100088877A /* Product.swift in Sources */,
@@ -518,6 +526,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		53082584293027560088877A /* NotinoTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53082585293027560088877A /* NotinoTest.xcdatamodel */,
+			);
+			currentVersion = 53082585293027560088877A /* NotinoTest.xcdatamodel */;
+			path = NotinoTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5363718A2927D62500EFDBA0 /* Project object */;
 }

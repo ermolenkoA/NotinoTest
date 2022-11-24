@@ -2,12 +2,12 @@ import Foundation
 
 final class WishlistAndCartManager {
     
-    static func isProductExist(where storage: Storage, _ productID: String) -> Bool {
-        (UserDefaults.standard.object(forKey: storage.rawValue) as? [String])?.contains(productID) ?? false
+    static func isProductExist(where storage: Storage, _ productID: UInt64) -> Bool {
+        return (UserDefaults.standard.array(forKey: storage.rawValue) as? [UInt64])?.contains(productID) ?? false
     }
 
-    static func changeProductStatus(where storage: Storage, _ productID: String) -> StorageResult {
-        guard var allIDs = UserDefaults.standard.object(forKey: storage.rawValue) as? [String] else {
+    static func changeProductStatus(where storage: Storage, _ productID: UInt64) -> StorageResult {
+        guard var allIDs = UserDefaults.standard.array(forKey: storage.rawValue) as? [UInt64] else {
             UserDefaults.standard.set([productID], forKey: storage.rawValue)
             return .added
         }

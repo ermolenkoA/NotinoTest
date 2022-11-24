@@ -56,7 +56,7 @@ final class CustomCVCell: UICollectionViewCell {
     private func mainInfoCreating() {
         productImageView = UIImageView(frame: .zero)
         productImageView.image = product!.productImage
-        productImageView.contentMode = .scaleToFill
+        productImageView.contentMode = .scaleAspectFit
         contentView.addSubview(productImageView)
         productImageView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
@@ -184,7 +184,7 @@ final class CustomCVCell: UICollectionViewCell {
                                                                  NSAttributedString.Key.foregroundColor: textColor])
             cartButton.setAttributedTitle(attributedText, for: .normal)
         } else {
-            print("Error CustomTVCell/setCartStatus: the font isn't exist.")
+            print("<CustomTVCell\\setCartStatus> ERROR: the font isn't exist.")
         }
     }
     
