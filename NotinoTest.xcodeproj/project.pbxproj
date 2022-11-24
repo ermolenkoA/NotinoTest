@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53082571292F92BE0088877A /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 5308256F292F92BD0088877A /* SFPRODISPLAYREGULAR.OTF */; };
+		53082572292F92BE0088877A /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 53082570292F92BE0088877A /* SFPRODISPLAYMEDIUM.OTF */; };
+		53082575292FD5570088877A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082574292FD5570088877A /* Constants.swift */; };
+		53082577292FD5AF0088877A /* SetProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082576292FD5AF0088877A /* SetProductProtocol.swift */; };
+		53082579292FD6100088877A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082578292FD6100088877A /* Product.swift */; };
+		5342A2D5292CE7AD00E8EA10 /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */; };
 		536371962927D62500EFDBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371952927D62500EFDBA0 /* AppDelegate.swift */; };
 		536371982927D62500EFDBA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371972927D62500EFDBA0 /* SceneDelegate.swift */; };
 		5363719A2927D62500EFDBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371992927D62500EFDBA0 /* ViewController.swift */; };
 		5363719D2927D62500EFDBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5363719B2927D62500EFDBA0 /* Main.storyboard */; };
-		536371A02927D62500EFDBA0 /* NotinoTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5363719E2927D62500EFDBA0 /* NotinoTest.xcdatamodeld */; };
 		536371A22927D62A00EFDBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536371A12927D62A00EFDBA0 /* Assets.xcassets */; };
 		536371A52927D62A00EFDBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536371A32927D62A00EFDBA0 /* LaunchScreen.storyboard */; };
 		8D00EE721A5BD622E05E5D28 /* Pods_NotinoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C54AA5D63409D0AB620C90B /* Pods_NotinoTest.framework */; };
@@ -19,12 +24,17 @@
 
 /* Begin PBXFileReference section */
 		0A822E19AE580E297467F869 /* Pods-NotinoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotinoTest.debug.xcconfig"; path = "Target Support Files/Pods-NotinoTest/Pods-NotinoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5308256F292F92BD0088877A /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		53082570292F92BE0088877A /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
+		53082574292FD5570088877A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		53082576292FD5AF0088877A /* SetProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProductProtocol.swift; sourceTree = "<group>"; };
+		53082578292FD6100088877A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
 		536371922927D62500EFDBA0 /* NotinoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotinoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536371952927D62500EFDBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		536371972927D62500EFDBA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		536371992927D62500EFDBA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5363719C2927D62500EFDBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5363719F2927D62500EFDBA0 /* NotinoTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotinoTest.xcdatamodel; sourceTree = "<group>"; };
 		536371A12927D62A00EFDBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536371A42927D62A00EFDBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		536371A62927D62A00EFDBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +54,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5308255B292F8D2D0088877A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				53082570292F92BE0088877A /* SFPRODISPLAYMEDIUM.OTF */,
+				5308256F292F92BD0088877A /* SFPRODISPLAYREGULAR.OTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		53082573292FD4FF0088877A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				53082574292FD5570088877A /* Constants.swift */,
+				53082576292FD5AF0088877A /* SetProductProtocol.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5308257A292FD65E0088877A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				536371972927D62500EFDBA0 /* SceneDelegate.swift */,
+				536371952927D62500EFDBA0 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5308257B292FD6B10088877A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				536371A12927D62A00EFDBA0 /* Assets.xcassets */,
+				536371A62927D62A00EFDBA0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		536371892927D62500EFDBA0 = {
 			isa = PBXGroup;
 			children = (
@@ -65,17 +111,13 @@
 		536371942927D62500EFDBA0 /* NotinoTest */ = {
 			isa = PBXGroup;
 			children = (
+				5308257B292FD6B10088877A /* Resources */,
+				5308257A292FD65E0088877A /* Application */,
+				53082573292FD4FF0088877A /* Utils */,
+				5308255B292F8D2D0088877A /* Fonts */,
 				536371AE2927D69500EFDBA0 /* Controller */,
 				536371AD2927D68E00EFDBA0 /* View */,
 				536371AC2927D68700EFDBA0 /* Model */,
-				536371952927D62500EFDBA0 /* AppDelegate.swift */,
-				536371972927D62500EFDBA0 /* SceneDelegate.swift */,
-				536371992927D62500EFDBA0 /* ViewController.swift */,
-				5363719B2927D62500EFDBA0 /* Main.storyboard */,
-				536371A12927D62A00EFDBA0 /* Assets.xcassets */,
-				536371A32927D62A00EFDBA0 /* LaunchScreen.storyboard */,
-				536371A62927D62A00EFDBA0 /* Info.plist */,
-				5363719E2927D62500EFDBA0 /* NotinoTest.xcdatamodeld */,
 			);
 			path = NotinoTest;
 			sourceTree = "<group>";
@@ -83,6 +125,7 @@
 		536371AC2927D68700EFDBA0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				53082578292FD6100088877A /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +133,8 @@
 		536371AD2927D68E00EFDBA0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				536371A32927D62A00EFDBA0 /* LaunchScreen.storyboard */,
+				5363719B2927D62500EFDBA0 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -97,6 +142,8 @@
 		536371AE2927D69500EFDBA0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */,
+				536371992927D62500EFDBA0 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,7 +154,6 @@
 				0A822E19AE580E297467F869 /* Pods-NotinoTest.debug.xcconfig */,
 				7637E84217CE3BF6EE7F4D56 /* Pods-NotinoTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +225,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53082572292F92BE0088877A /* SFPRODISPLAYMEDIUM.OTF in Resources */,
+				53082571292F92BE0088877A /* SFPRODISPLAYREGULAR.OTF in Resources */,
 				536371A52927D62A00EFDBA0 /* LaunchScreen.storyboard in Resources */,
 				536371A22927D62A00EFDBA0 /* Assets.xcassets in Resources */,
 				5363719D2927D62500EFDBA0 /* Main.storyboard in Resources */,
@@ -236,8 +284,11 @@
 			files = (
 				5363719A2927D62500EFDBA0 /* ViewController.swift in Sources */,
 				536371962927D62500EFDBA0 /* AppDelegate.swift in Sources */,
-				536371A02927D62500EFDBA0 /* NotinoTest.xcdatamodeld in Sources */,
+				5342A2D5292CE7AD00E8EA10 /* CustomCVCell.swift in Sources */,
 				536371982927D62500EFDBA0 /* SceneDelegate.swift in Sources */,
+				53082575292FD5570088877A /* Constants.swift in Sources */,
+				53082577292FD5AF0088877A /* SetProductProtocol.swift in Sources */,
+				53082579292FD6100088877A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,19 +506,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5363719E2927D62500EFDBA0 /* NotinoTest.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5363719F2927D62500EFDBA0 /* NotinoTest.xcdatamodel */,
-			);
-			currentVersion = 5363719F2927D62500EFDBA0 /* NotinoTest.xcdatamodel */;
-			path = NotinoTest.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5363718A2927D62500EFDBA0 /* Project object */;
 }
