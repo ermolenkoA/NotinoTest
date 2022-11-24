@@ -12,6 +12,9 @@
 		53082575292FD5570088877A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082574292FD5570088877A /* Constants.swift */; };
 		53082577292FD5AF0088877A /* SetProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082576292FD5AF0088877A /* SetProductProtocol.swift */; };
 		53082579292FD6100088877A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082578292FD6100088877A /* Product.swift */; };
+		5308257D292FDE4A0088877A /* WishlistAndCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308257C292FDE4A0088877A /* WishlistAndCartManager.swift */; };
+		5308257F292FF5BA0088877A /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308257E292FF5BA0088877A /* JSONManager.swift */; };
+		53082581292FF60B0088877A /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082580292FF60B0088877A /* PhotoManager.swift */; };
 		5342A2D5292CE7AD00E8EA10 /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */; };
 		536371962927D62500EFDBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371952927D62500EFDBA0 /* AppDelegate.swift */; };
 		536371982927D62500EFDBA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371972927D62500EFDBA0 /* SceneDelegate.swift */; };
@@ -29,6 +32,9 @@
 		53082574292FD5570088877A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		53082576292FD5AF0088877A /* SetProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProductProtocol.swift; sourceTree = "<group>"; };
 		53082578292FD6100088877A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5308257C292FDE4A0088877A /* WishlistAndCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistAndCartManager.swift; sourceTree = "<group>"; };
+		5308257E292FF5BA0088877A /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		53082580292FF60B0088877A /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
 		536371922927D62500EFDBA0 /* NotinoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotinoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536371952927D62500EFDBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				536371A12927D62A00EFDBA0 /* Assets.xcassets */,
-				536371A62927D62A00EFDBA0 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 		536371942927D62500EFDBA0 /* NotinoTest */ = {
 			isa = PBXGroup;
 			children = (
+				536371A62927D62A00EFDBA0 /* Info.plist */,
 				5308257B292FD6B10088877A /* Resources */,
 				5308257A292FD65E0088877A /* Application */,
 				53082573292FD4FF0088877A /* Utils */,
@@ -126,6 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				53082578292FD6100088877A /* Product.swift */,
+				5308257C292FDE4A0088877A /* WishlistAndCartManager.swift */,
+				5308257E292FF5BA0088877A /* JSONManager.swift */,
+				53082580292FF60B0088877A /* PhotoManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +297,9 @@
 				536371982927D62500EFDBA0 /* SceneDelegate.swift in Sources */,
 				53082575292FD5570088877A /* Constants.swift in Sources */,
 				53082577292FD5AF0088877A /* SetProductProtocol.swift in Sources */,
+				5308257D292FDE4A0088877A /* WishlistAndCartManager.swift in Sources */,
+				5308257F292FF5BA0088877A /* JSONManager.swift in Sources */,
+				53082581292FF60B0088877A /* PhotoManager.swift in Sources */,
 				53082579292FD6100088877A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

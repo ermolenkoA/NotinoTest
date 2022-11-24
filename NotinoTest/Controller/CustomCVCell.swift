@@ -1,10 +1,3 @@
-//
-//  CustomCVCell.swift
-//  NotinoTest
-//
-//  Created by VironIT on 22.11.22.
-//
-
 import UIKit
 import SnapKit
 
@@ -48,7 +41,7 @@ final class CustomCVCell: UICollectionViewCell {
             make.height.width.equalTo(48)
         }
         heartImageView = UIImageView(frame: .zero)
-        setWishlistStatus(product!.isWishlisted)
+        setWishlistStatus(isWishlisted: WishlistAndCartManager.isProductExist(where: .wishlist, product!.id))
         heartImageView.contentMode = .scaleAspectFill
         heartImageView.clipsToBounds = true
         heartView.addSubview(heartImageView)
@@ -56,6 +49,8 @@ final class CustomCVCell: UICollectionViewCell {
             make.center.equalToSuperview()
             make.width.height.equalTo(16)
         }
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tappedWishlist))
+        heartView.addGestureRecognizer(tap)
     }
     
     private func mainInfoCreating() {
@@ -157,7 +152,7 @@ final class CustomCVCell: UICollectionViewCell {
         cartButton = UIButton(frame: .zero)
         cartButton.layer.borderColor = Color.borderColor
         cartButton.layer.borderWidth = 1
-        setCartStatus(product!.isInCart)
+        setCartStatus(isInCart: WishlistAndCartManager.isProductExist(where: .cart, product!.id))
         contentView.addSubview(cartButton)
         
         cartButton.snp.makeConstraints { make in
@@ -168,11 +163,20 @@ final class CustomCVCell: UICollectionViewCell {
         var configuration = UIButton.Configuration.borderless()
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12)
         cartButton.configuration = configuration
+        cartButton.addTarget(self, action: #selector(tappedCartButton), for: .touchUpInside)
     }
     
     // MARK: - Private Logic Functions
     
-    private func setCartStatus(_ isInCart: Bool) {
+    @objc func tappedCartButton() {
+        setCartStatus(isInCart: WishlistAndCartManager.changeProductStatus(where: .cart, product!.id) == .added)
+    }
+    
+    @objc func tappedWishlist() {
+        setWishlistStatus(isWishlisted: WishlistAndCartManager.changeProductStatus(where: .wishlist, product!.id) == .added)
+    }
+    
+    private func setCartStatus(isInCart: Bool) {
         if let font = UIFont(name: Font.SFMedium, size: 14) {
             let (text, textColor) = isInCart ? ("V košíku", Color.inkTertiary) : ("Do košíku", .black)
             let attributedText = NSAttributedString(string: text,
@@ -184,7 +188,7 @@ final class CustomCVCell: UICollectionViewCell {
         }
     }
     
-    private func setWishlistStatus(_ isWishlisted: Bool) {
+    private func setWishlistStatus(isWishlisted: Bool) {
         heartImageView.image = isWishlisted ? UIImage(named: Images.heartFilled) : UIImage(named: Images.heart)
     }
     
@@ -194,6 +198,8 @@ final class CustomCVCell: UICollectionViewCell {
 
 extension CustomCVCell: SetProductProtocol {
     func setProduct(_ product: Product) {
+        contentView.subviews.forEach { $0.removeFromSuperview() }
+        
         self.product = product
         heartCreating()
         mainInfoCreating()

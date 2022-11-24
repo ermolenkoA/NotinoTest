@@ -1,11 +1,14 @@
-//
-//  Constants.swift
-//  NotinoTest
-//
-//  Created by VironIT on 24.11.22.
-//
-
 import UIKit
+
+enum Storage: String {
+    case cart = "Cart"
+    case wishlist = "Wishlist"
+}
+
+enum StorageResult {
+    case added
+    case removed
+}
 
 struct Font {
     static let SFRegular = "SFProDisplay-Regular"

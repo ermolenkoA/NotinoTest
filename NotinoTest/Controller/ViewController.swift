@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  NotinoTest
-//
-//  Created by VironIT on 18.11.22.
-//
-
 import UIKit
 import SnapKit
 
@@ -23,30 +16,48 @@ final class ViewController: UIViewController {
         view.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 0.94)
         title = "Produkty"
         
-//        products.append(Product(isWishlisted: true,
-//                                            productImage: UIImage(named: "img1")!,
-//                                            brand: "Gucci",
-//                                            productName: "Messi",
-//                                            annatation: "Bla bla Bla bla Bla bla Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
-//                                            rating: 2.3,
-//                                            price: "20 $",
-//                                            isInCart: false))
-//        products.append(Product(isWishlisted: false,
-//                                            productImage: UIImage(named: "img2")!,
-//                                            brand: "Gucci2",
-//                                            productName: "Messi2",
-//                                            annatation: "Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
-//                                            rating: 4.7,
-//                                            price: "100 $",
-//                                            isInCart: true))
-//        products.append(Product(isWishlisted: true,
-//                                            productImage: UIImage(named: "img3")!,
-//                                            brand: "Gucci3",
-//                                            productName: "Messi3",
-//                                            annatation: "Bla bla Bla bla Bla bla Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
-//                                            rating: 3,
-//                                            price: "400 $",
-//                                            isInCart: true))
+        products.append(Product(id: "1",
+                                productImage: UIImage(named: "img1")!,
+                                brand: "Gucci",
+                                productName: "Messi",
+                                annatation: "Bla bla Bla bla Bla bla Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
+                                rating: 2.3,
+                                price: "20 $"))
+        products.append(Product(id: "2",
+                                productImage: UIImage(named: "img2")!,
+                                brand: "Gucci2",
+                                productName: "Messi2",
+                                annatation: "Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
+                                rating: 4.7,
+                                price: "100 $"))
+        products.append(Product(id: "3",
+                                productImage: UIImage(named: "img3")!,
+                                brand: "Gucci3",
+                                productName: "Messi3",
+                                annatation: "Bla bla Bla bla Bla bla Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
+                                rating: 3,
+                                price: "400 $"))
+        products.append(Product(id: "4",
+                                productImage: UIImage(named: "img1")!,
+                                brand: "Gucci",
+                                productName: "Messi",
+                                annatation: "Bla bla Bla bla Bla bla Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
+                                rating: 2.3,
+                                price: "20 $"))
+        products.append(Product(id: "5",
+                                productImage: UIImage(named: "img2")!,
+                                brand: "Gucci2",
+                                productName: "Messi2",
+                                annatation: "Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
+                                rating: 4.7,
+                                price: "100 $"))
+        products.append(Product(id: "6",
+                                productImage: UIImage(named: "img3")!,
+                                brand: "Gucci3",
+                                productName: "Messi3",
+                                annatation: "Bla bla Bla bla Bla bla Bla bla Bla bla. Bla bla Bla bla Bla bla Bla bla",
+                                rating: 3,
+                                price: "400 $"))
         
         collectionViewSettings()
     }
