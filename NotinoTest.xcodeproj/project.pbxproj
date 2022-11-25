@@ -17,6 +17,8 @@
 		53082581292FF60B0088877A /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082580292FF60B0088877A /* PhotoManager.swift */; };
 		53082583292FFD7D0088877A /* JSONModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53082582292FFD7D0088877A /* JSONModels.swift */; };
 		53082586293027560088877A /* NotinoTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53082584293027560088877A /* NotinoTest.xcdatamodeld */; };
+		5308258D29302FD00088877A /* WhitelistProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308258929302FD00088877A /* WhitelistProduct+CoreDataClass.swift */; };
+		5308259029302FD00088877A /* CartProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308258C29302FD00088877A /* CartProduct+CoreDataClass.swift */; };
 		5342A2D5292CE7AD00E8EA10 /* CustomCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */; };
 		536371962927D62500EFDBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371952927D62500EFDBA0 /* AppDelegate.swift */; };
 		536371982927D62500EFDBA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536371972927D62500EFDBA0 /* SceneDelegate.swift */; };
@@ -39,6 +41,8 @@
 		53082580292FF60B0088877A /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		53082582292FFD7D0088877A /* JSONModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModels.swift; sourceTree = "<group>"; };
 		53082585293027560088877A /* NotinoTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotinoTest.xcdatamodel; sourceTree = "<group>"; };
+		5308258929302FD00088877A /* WhitelistProduct+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WhitelistProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5308258C29302FD00088877A /* CartProduct+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CartProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5342A2D4292CE7AD00E8EA10 /* CustomCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCVCell.swift; sourceTree = "<group>"; };
 		536371922927D62500EFDBA0 /* NotinoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotinoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536371952927D62500EFDBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5308258729302FA10088877A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				53082584293027560088877A /* NotinoTest.xcdatamodeld */,
+				5308258829302FAA0088877A /* Models */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5308258829302FAA0088877A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5308258929302FD00088877A /* WhitelistProduct+CoreDataClass.swift */,
+				5308258C29302FD00088877A /* CartProduct+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		536371892927D62500EFDBA0 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +142,7 @@
 		536371942927D62500EFDBA0 /* NotinoTest */ = {
 			isa = PBXGroup;
 			children = (
+				5308258729302FA10088877A /* CoreData */,
 				536371A62927D62A00EFDBA0 /* Info.plist */,
 				5308257B292FD6B10088877A /* Resources */,
 				5308257A292FD65E0088877A /* Application */,
@@ -128,7 +151,6 @@
 				536371AE2927D69500EFDBA0 /* Controller */,
 				536371AD2927D68E00EFDBA0 /* View */,
 				536371AC2927D68700EFDBA0 /* Model */,
-				53082584293027560088877A /* NotinoTest.xcdatamodeld */,
 			);
 			path = NotinoTest;
 			sourceTree = "<group>";
@@ -305,7 +327,9 @@
 				53082575292FD5570088877A /* Constants.swift in Sources */,
 				53082577292FD5AF0088877A /* SetProductProtocol.swift in Sources */,
 				5308257D292FDE4A0088877A /* WishlistAndCartManager.swift in Sources */,
+				5308259029302FD00088877A /* CartProduct+CoreDataClass.swift in Sources */,
 				53082583292FFD7D0088877A /* JSONModels.swift in Sources */,
+				5308258D29302FD00088877A /* WhitelistProduct+CoreDataClass.swift in Sources */,
 				5308257F292FF5BA0088877A /* JSONManager.swift in Sources */,
 				53082581292FF60B0088877A /* PhotoManager.swift in Sources */,
 				53082579292FD6100088877A /* Product.swift in Sources */,

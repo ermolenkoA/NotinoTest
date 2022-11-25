@@ -5,7 +5,7 @@ final class CustomCVCell: UICollectionViewCell {
     
     // MARK: - Public Properties
     
-    static let identifier = "CustomCVCell"
+    public static let identifier = "CustomCVCell"
     
     // MARK: - Private Properties
     
@@ -169,11 +169,11 @@ final class CustomCVCell: UICollectionViewCell {
     // MARK: - Private Logic Functions
     
     @objc func tappedCartButton() {
-        setCartStatus(isInCart: WishlistAndCartManager.changeProductStatus(where: .cart, product!.id) == .added)
+        setCartStatus(isInCart: WishlistAndCartManager.changeCartStatus(product!.id) == .added)
     }
     
     @objc func tappedWishlist() {
-        setWishlistStatus(isWishlisted: WishlistAndCartManager.changeProductStatus(where: .wishlist, product!.id) == .added)
+        setWishlistStatus(isWishlisted: WishlistAndCartManager.changeWhitelistStatus(product!.id) == .added)
     }
     
     private func setCartStatus(isInCart: Bool) {

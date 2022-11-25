@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: - Enums
+
 enum Storage: String {
     case cart = "Cart"
     case wishlist = "Wishlist"
@@ -9,6 +11,8 @@ enum StorageResult {
     case added
     case removed
 }
+
+// MARK: - Structs
 
 struct Font {
     static let SFRegular = "SFProDisplay-Regular"

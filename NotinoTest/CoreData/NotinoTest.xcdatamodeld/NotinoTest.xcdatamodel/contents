@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CartProduct" representedClassName="CartProduct" syncable="YES">
+        <attribute name="identity" attributeType="Integer 64" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="WhitelistProduct" representedClassName="WhitelistProduct" syncable="YES">
+        <attribute name="identity" attributeType="Integer 64" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="CartProduct" positionX="-63" positionY="-18" width="128" height="14"/>
+        <element name="WhitelistProduct" positionX="-54" positionY="0" width="128" height="14"/>
+    </elements>
+</model>
