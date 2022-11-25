@@ -26,7 +26,7 @@ final class CustomCVCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -60,9 +60,9 @@ final class CustomCVCell: UICollectionViewCell {
         contentView.addSubview(productImageView)
         productImageView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
-            make.top.equalTo(heartView.snp.bottomMargin)
+            make.top.equalTo(heartView.snp.bottom)
             make.height.equalTo(160)
-            make.width.equalToSuperview()
+            make.width.equalTo(164)
         }
         
         brandLabel = UILabel(frame: .zero)
@@ -120,6 +120,7 @@ final class CustomCVCell: UICollectionViewCell {
         for i in 0...4 {
             ratingView.subviews[i].snp.makeConstraints { make in
                 make.height.width.equalTo(12)
+                make.top.bottom.equalToSuperview()
                 make.centerY.equalToSuperview()
                 switch i {
                 case 0...1:
@@ -144,7 +145,7 @@ final class CustomCVCell: UICollectionViewCell {
         contentView.addSubview(priceLabel)
         priceLabel.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
-            make.top.equalTo(ratingView).inset(12)
+            make.top.equalTo(ratingView.snp.bottom).inset(-12)
         }
     }
     
@@ -158,6 +159,7 @@ final class CustomCVCell: UICollectionViewCell {
         cartButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(priceLabel.snp.bottom).inset(-12)
+            make.bottom.equalToSuperview().inset(12)
         }
         
         var configuration = UIButton.Configuration.borderless()
@@ -199,7 +201,7 @@ final class CustomCVCell: UICollectionViewCell {
 extension CustomCVCell: SetProductProtocol {
     func setProduct(_ product: Product) {
         contentView.subviews.forEach { $0.removeFromSuperview() }
-        
+        contentView.sizeToFit()
         self.product = product
         heartCreating()
         mainInfoCreating()
@@ -207,9 +209,8 @@ extension CustomCVCell: SetProductProtocol {
         priceCreating()
         cartButtonCreating()
         contentView.snp.makeConstraints { make in
-            make.left.right.top.equalTo(self)
-            make.bottom.equalTo(cartButton).inset(-12)
+            make.top.left.right.equalToSuperview()
+            make.bottom.equalToSuperview()
         }
-        contentView.layer.borderWidth = 1
     }
 }

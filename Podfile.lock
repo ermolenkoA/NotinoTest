@@ -1,20 +1,20 @@
 PODS:
-  - Kingfisher (7.3.2)
+  - AlignedCollectionViewFlowLayout (1.1.2)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
-  - Kingfisher (= 7.3.2)
+  - AlignedCollectionViewFlowLayout
   - SnapKit (= 5.6.0)
 
 SPEC REPOS:
   trunk:
-    - Kingfisher
+    - AlignedCollectionViewFlowLayout
     - SnapKit
 
 SPEC CHECKSUMS:
-  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  AlignedCollectionViewFlowLayout: ee2ef451e741ec08f8e0967d828001e2f051c20a
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 1026fa201d502de13772429daad9ac4a39166c4e
+PODFILE CHECKSUM: 090e8f9c11bb928dfbc1e6db4b9c857805bd50a0
 
 COCOAPODS: 1.11.3

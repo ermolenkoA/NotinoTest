@@ -6,7 +6,7 @@ target 'NotinoTest' do
   use_frameworks!
 
 pod 'SnapKit', '5.6.0'
-pod 'Kingfisher', '7.3.2'
+pod "AlignedCollectionViewFlowLayout", '1.1.2'
 
   # Pods for NotinoTest
 

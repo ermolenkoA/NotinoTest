@@ -1,10 +1,10 @@
 import UIKit
 import SnapKit
-
+import AlignedCollectionViewFlowLayout
 final class ViewController: UIViewController {
     
     // MARK: - Private Properties
-    
+    private var mainView: UIView!
     private var collectionView: UICollectionView!
     private var activityIndicator = UIActivityIndicatorView()
     private var products = [Product]()
@@ -14,7 +14,12 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 0.94)
+        
         title = "Produkty"
+        if let font = UIFont(name: Font.SFMedium, size: 16) {
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: font]
+        }
+        mainViewSettings()
         activityIndicatorSettings()
         startSearching()
     }
@@ -50,21 +55,31 @@ final class ViewController: UIViewController {
         }
     }
     
+    private func mainViewSettings() {
+        mainView = UIView(frame: .zero)
+        mainView.backgroundColor = .white
+        view.addSubview(mainView)
+        mainView.snp.makeConstraints { make in
+            make.top.trailing.leading.equalTo(view.safeAreaLayoutGuide)
+            make.bottom.equalToSuperview()
+        }
+    }
+    
     private func collectionViewSettings() {
-        let layout = UICollectionViewFlowLayout()
+        let layout = AlignedCollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
         layout.minimumLineSpacing = 20
         layout.minimumInteritemSpacing = 8
-        layout.itemSize = CGSize(width: 164, height: 400)
+        layout.verticalAlignment = .top
+        layout.estimatedItemSize = CGSize(width: 164, height: 450)
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.alwaysBounceVertical = true
-        collectionView.backgroundColor = .white
-        view.addSubview(collectionView)
+        collectionView.backgroundColor = .clear
+        mainView?.addSubview(collectionView)
         collectionView.snp.makeConstraints { maker in
-            maker.trailing.top.bottom.leading.equalTo(view.safeAreaLayoutGuide)
+            maker.edges.equalTo(view.safeAreaLayoutGuide)
         }
         
         endSearching()
@@ -96,10 +111,4 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     
-}
-
-// MARK: - UICollectionViewDelegateFlowLayout
-
-extension ViewController: UICollectionViewDelegateFlowLayout {
-
 }
