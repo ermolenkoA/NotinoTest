@@ -42,8 +42,8 @@ struct ProductModel: Decodable {
    """ }
     
     func getProduct() -> Product {
-        let photo = PhotoManager.getPhotoByURL(imageUrl)
         let finalPrice = "\(price.value) Kč"
+        let photo = PhotoManager.getPhotoByURL(imageUrl)
         return Product(id: productId, productImage: photo, brand: brand.name, productName: name,
                 annatation: annotation, rating: reviewSummary.averageRating, price: finalPrice)
     }

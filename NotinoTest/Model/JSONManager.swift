@@ -41,10 +41,7 @@ final class JSONManager {
                 }
                 DispatchQueue.main.async {
                     completion(
-                        result.vpProductByIds.map {
-                            print($0.about)
-                            return $0.getProduct()
-                        }
+                        result.vpProductByIds.map { $0.getProduct() }
                     )
                 }
             }
